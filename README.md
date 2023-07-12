@@ -1,4 +1,4 @@
-# Todoist Test Automation Framework
+# Todoist Test Automation Framework - Using TestCafe
 
 This repository contains a test automation framework for automating tasks on the Todoist website using TestCafe and JavaScript.
 
@@ -52,3 +52,7 @@ yarn at --customTest validate-create-project
 ## Reporting
 
 After running the tests, the framework generates an HTML Allure report that provides detailed information about the test results. The report is located in the `allure` directory. and it will open directly.
+
+## Video
+
+Video Recording for the test scenarios can be found [Here](https://drive.google.com/file/d/1o9qDG2--PZ7Q66Ou-GKRMyxIMId8BPsm/view?usp=sharing)
