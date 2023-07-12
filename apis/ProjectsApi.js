@@ -14,15 +14,4 @@ export default class ProjectsApi {
       throw new Error(error);
     }
   }
-
-  static async getTasks() {
-    try {
-      const api = new TodoistApi(process.env.API_TOKEN);
-      const response = await api.getTasks();
-
-      return response;
-    } catch (error) {
-      throw new Error(error);
-    }
-  }
 }
