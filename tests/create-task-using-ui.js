@@ -3,7 +3,7 @@ import { projectDetails } from "../data/projectDetails";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import ProjectPage from "../pages/ProjectPage";
-import ProjectsApi from "../apis/ProjectsApi";
+import TasksApi from "../apis/TasksApi";
 
 fixture`Todoist Tests`.page(urls.home);
 
@@ -20,7 +20,7 @@ test("Validate create task using UI", async (t) => {
 
   await projectPage.createTask({ projectDetails });
 
-  const response = await ProjectsApi.getTasks();
+  const response = await TasksApi.getTasks();
   const containsTask = response.some(
     (task) => task.content === projectDetails.taskName
   );
